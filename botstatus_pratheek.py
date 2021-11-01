@@ -33,7 +33,7 @@ async def main_pratheek():
                         for ccc in zzz_pratheek:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xxx_pratheek += f"\n\n🤖 **BOT**: @{bot}\n🔴 **STATUS**: down"
+                            xxx_pratheek += f"\n\n **BOT**: @{bot}\n **STATUS**: DOWN"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f" **Beep! Beep!! @{bot} is DOWN** ")
@@ -47,7 +47,7 @@ async def main_pratheek():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_pratheek += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 45min</i> - Made By [DᴇᴠᴏʟᴏᴘᴇR](https://t.me/cat_of_TG) 💙"
+                xxx_pratheek += f"\n\n LASK UPDATED ON : {last_update} \n\n<i> UPDATES EVERY 45min</i> - 💙"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(2700)
